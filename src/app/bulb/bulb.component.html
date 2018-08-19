@@ -1,0 +1,8 @@
+<h1>
+    bulb works!
+</h1>
+
+<span *ngFor="let obj of colors">
+        
+    <img [src]="obj.path"> <button (click)="change(obj)">{{obj.status}} </button>
+    </span>
