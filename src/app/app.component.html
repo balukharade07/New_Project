@@ -2,9 +2,12 @@
 
     <app-bulb></app-bulb>
     <app-add></app-add>
-    <!-- <h1>
+    <app-binding></app-binding>
+    <app-d2></app-d2>
+
+    <h1>
         Welcome to {{ title }}!
-    </h1> -->
+    </h1>
     <!-- <h2>Pearson Information</h2>
     <img [src]="imagePath">
 
@@ -68,4 +71,10 @@
         <div *ngSwitchDefault>Pick Colors</div>
 
     </div> -->
+
+    <p>Frist Number <input type="text" [(ngModel)]="no1"></p>
+    <p>Secound number <input type="text" [(ngModel)]="no2"></p>
+    <p>Addition is : {{result}}</p>
+
+
 </div>

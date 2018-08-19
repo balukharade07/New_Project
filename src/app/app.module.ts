@@ -10,6 +10,8 @@ import { C2Component } from './c2/c2.component';
 import { BulbComponent } from './bulb/bulb.component';
 import { AddComponent } from './add/add.component';
 import { BindingComponent } from './binding/binding.component';
+import { MyModuleModule } from './my-module/my-module.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { BindingComponent } from './binding/binding.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    MyModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

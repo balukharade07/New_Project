@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{CalculatorService} from "./calculator.service";
 
 @Component({
   selector: 'app-root',
@@ -84,35 +85,39 @@ export class AppComponent {
   // status = "OFF";
 
 
-  colors =  [
-    {status:'ON ',path : './assets/img/bulboff.gif'},
-    {status:'ON ',path : './assets/img/bulboff.gif'},
-    {status:'ON ',path : './assets/img/bulboff.gif'},
-    {status:'ON ',path : './assets/img/bulboff.gif'},
-    {status:'ON ',path : './assets/img/bulboff.gif'}
+//   colors =  [
+//     {status:'ON ',path : './assets/img/bulboff.gif'},
+//     {status:'ON ',path : './assets/img/bulboff.gif'},
+//     {status:'ON ',path : './assets/img/bulboff.gif'},
+//     {status:'ON ',path : './assets/img/bulboff.gif'},
+//     {status:'ON ',path : './assets/img/bulboff.gif'}
 
-  ];
+//   ];
  
-  change(color){
+//   change(color){
    
-    if(color.status == 'ON '){
-      color.path = './assets/img/bulbon.gif'
-      color.status = "OFF";
+//     if(color.status == 'ON '){
+//       color.path = './assets/img/bulbon.gif'
+//       color.status = "OFF";
    
-    } else {
-      color.path = './assets/img/bulboff.gif';
-      color.status = "ON ";
+//     } else x
+//       color.path = './assets/img/bulboff.gif';
+//       color.status = "ON ";
      
-    }
-    return color;
+//     }
+//     return color;
+// }
+result = 0;
+constructor(private x : CalculatorService){
+this.result = this.x.add(3,4);
 }
 
-
  
   
   
 
   
+
  
  
 
