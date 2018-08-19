@@ -9,6 +9,7 @@ import { ParentComponent } from './parent/parent.component';
 import { C2Component } from './c2/c2.component';
 import { BulbComponent } from './bulb/bulb.component';
 import { AddComponent } from './add/add.component';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AddComponent } from './add/add.component';
     ParentComponent,
     C2Component,
     BulbComponent,
-    AddComponent
+    AddComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,

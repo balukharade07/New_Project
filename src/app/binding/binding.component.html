@@ -1,0 +1,29 @@
+<p>
+    binding works!
+</p>
+
+<h1>
+    Welcome to {{ title }}!
+</h1>
+<h2>Pearson Information</h2>
+<img [src]="imagePath">
+
+<ul>
+    <li>
+        <span>Name:-</span> {{name}}
+    </li>
+    <li>
+        <span>Address:-</span> {{address}}
+    </li>
+</ul>
+
+<h1>two way binding</h1>
+
+
+<input type="text" [(ngModel)]="name">
+
+
+<p>counter: {{counter}}</p>
+
+<button (click)="incres()">incres</button>
+<button (click)="deincres()">deincres</button>
